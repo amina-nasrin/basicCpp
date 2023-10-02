@@ -2,20 +2,14 @@
 using namespace std;
 
 int main(){
-    int i,j,k;
-
-    cin>>j;
-    for(i=j;i>0;i--){
-        for(k=1;k<i;k++){
-            cout<<" ";
-     }  
-
-    while((k-1)!=j) {
+    int input=7;
+   for(int row=1; row<=input; row++){
+    for(int space=input; space>row; space--){
+        cout<<" ";
+    }
+    for(int star=1; star<=(2*row-1); star++){
         cout<<"*";
-        k++;
     }
     cout<<"\n";
-    } 
-    
-
+   }
 }
